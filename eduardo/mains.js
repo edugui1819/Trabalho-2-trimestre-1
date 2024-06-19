@@ -6,7 +6,7 @@ const questions = [
     },
     { 
         question: "Quem ganhou a ultima bola de ouro?", 
-        options: ["Vini jr", "Messi"], 
+        options: ["Messi", "Vini jr"], 
         answer: 0 
     },
     { 
