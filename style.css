@@ -1,0 +1,192 @@
+/* Reseta margens e padding para garantir que tudo comece do zero */
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 5.0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #0a0a0a; /* Cor de fundo do cabeçalho */
+    color: rgb(19, 18, 18); /* Cor do texto */
+    padding: px 20px; /* Espaçamento interno */
+    display: flex;
+    justify-content: space-between; /* Alinha logo e navegação nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Estilo do logo */
+header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos da navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores */
+    display: flex; /* Exibe os itens de forma horizontal */
+}
+
+nav ul li {
+    margin-left: 40px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: rgb(70, 67, 67); /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinha o link quando o cursor passa por cima */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg-color: #1869b9;
+    --primary-color: #DDDDDD;
+    --secondary-color: #F05454;
+    --font: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: var(--bg-color);
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--bg-color);
+    margin: 0 2rem 1rem 0rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: transform 0.1s;
+}
+
+.grafico {
+    margin-top: 3rem;
+}
+
+.graficos-container {
+    margin: 5rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
+}
+
+span {
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grafico-container {
+    width: 25%;
+    margin-top: 30px;
+}
+
+.grafico {
+    margin: 20px 0;
+}
+
+canvas {
+    width: 25%;
+    height: 100px;
+}
+
+/* Reseta margens e padding para garantir que tudo comece do zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos do conteúdo principal (exemplo) */
+main {
+    flex: 1; /* Faz o conteúdo principal crescer e ocupar o espaço disponível */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/* Estilo para os textos dentro do rodapé */
+footer p {
+    margin: 5px 0; /* Espaçamento entre as linhas */
+}
+
+footer strong {
+    font-weight: bold; /* Deixa em negrito as labels (Escola, Nome do Aluno, etc.) */
+}

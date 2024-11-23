@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Cabeçalho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Vendas</h1>
+        </div>
+        <nav>
+            <ul>
+               
+            
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos com Chart.js</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importando Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="grafico-container">
+        <!-- Gráfico de Barras -->
+        <div class="grafico">
+            <canvas id="graficoBarras"></canvas>
+        </div>
+        <!-- Gráfico de Pizza -->
+        <div class="grafico">
+            <canvas id="graficoPizza"></canvas>
+        </div>
+    </div>
+
+    <script>
+        // Dados e configuração do gráfico de barras
+        const ctxBarras = document.getElementById('graficoBarras').getContext('2d');
+        const graficoBarras = new Chart(ctxBarras, {
+            type: 'bar',
+            data: {
+                labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio'], // Rótulos do eixo X
+                datasets: [{
+                    label: 'Vendas de 2024',
+                    data: [12, 19, 3, 5, 2], // Valores para o gráfico
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)', // Cor de fundo das barras
+                    borderColor: 'rgba(54, 162, 235, 1)', // Cor da borda
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // Dados e configuração do gráfico de pizza
+        const ctxPizza = document.getElementById('graficoPizza').getContext('2d');
+        const graficoPizza = new Chart(ctxPizza, {
+            type: 'pie',
+            data: {
+                labels: ['Fevereiro', 'Abril', 'Janeiro', 'Março'],
+                datasets: [{
+                    label: 'Distribuição de Veículos',
+                    data: [300, 50, 100, 30], // Valores para cada fatia
+                    backgroundColor: ['#FF5733', '#33FF57', '#3357FF', '#FFC300'], // Cores de cada fatia
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Rodapé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+
+    <!-- Rodapé -->
+    <footer>
+        <p><strong>Colégio Estadual Padre Claudio Morelli /   </strong></p>
+        <p><strong>Eduardo Ferreira França /   </strong></p>
+        <p><strong>n11   </strong></p>
+    </footer>
+
+</body>
+</html>
+
+ 
